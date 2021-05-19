@@ -1,0 +1,101 @@
+
+body {
+    max-width: 60em;
+    padding: 0 20px;
+    margin: 1em auto 20em;
+    background-color: #fff;
+    color: #333;
+    font-size-adjust: 0.45;
+    position: relative;
+    box-shadow: 0 .1em 1em #444;
+    /* border: solid 2px black; */
+    padding-bottom: 10px;
+}
+
+h3 {
+    margin: 10px 2px 5px 2px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+header {
+    background-color: #0045ff;
+}
+
+.cebecalho {
+    /* border: solid 2px black; */
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.buscar-contato {
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+td {
+    padding: 5px;
+}
+table {
+    padding: 0;
+}
+
+/* table, th, td {
+    margin: 10px;
+    border: solid 1px black;
+} */
+
+a {
+    /* border: solid 2px black; */
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0045ff;
+    margin: 10px 5px;
+}
+
+.links {
+    /* border: solid 2px black; */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+a:hover {
+    background-color: #0090ff;
+}
+
+td:hover {
+    background-color: antiquewhite;
+}
+
+.content2 {
+    border: transparent 1px #444;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0em .02em 0.3em #444;
+}
+
+.table {
+     margin: 0;
+     width: 100%;
+     text-align: left;
+}
+
+#contato {
+    display: inline;
+}

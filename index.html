@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefônica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="cebecalho">
+            <h1>Agenda Telefônica</h1>
+        </div>
+        <div class="buscar-contato">
+            <!-- <h3>Buscar contato</h3> -->
+            <input type="search" name="busca" id="bcontato" placeholder="Digite o nome ou o número">
+            <button>Buscar</button>
+        </div> 
+    </header>
+
+    <nav class="links">
+        <a href="criaContato.html">Criar contato</a>
+        <a href="contatos.html">Contatos</a>
+    </nav>       
+    <section id="conteudo">        
+    </section>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.href) // requisição ajax
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+
+<script src="js/main.js"></script>
+<script src="js/server.js"></script>
+
+</html>
